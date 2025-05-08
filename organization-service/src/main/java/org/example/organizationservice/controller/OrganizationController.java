@@ -46,7 +46,7 @@ public class OrganizationController {
         return organizationService.getOrgWithComments(id);
     }
 
-    @PostMapping("/c    reate")
+    @PostMapping("/create")
     public ResponseEntity<OrganizationDto> createOrganization(@Validated @RequestBody OrganizationRegisterDto organizationDto) {
         try {
             OrganizationDto createdOrganization = organizationService.createOrganization(organizationDto);
